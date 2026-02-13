@@ -34,6 +34,12 @@ let dragStartY = 0;
 let photoStartX = 0;
 let photoStartY = 0;
 
+// ==================== CONSTANTS ====================
+const SPOTIFY_INTL_LOCALE_PATTERN = /\/intl-[a-z]{2}(-[a-z]{2})?\//i;
+const EXPORT_REMINDER_MESSAGE = '⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.';
+const EXPORT_SUCCESS_MESSAGE = '✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.';
+
+
 const funnyMessages = [
     "T'ES NULLE A L'HUILE 😂",
     "Tu fais exprès ou quoi ?!",
@@ -523,6 +529,9 @@ function renderSpotify() {
         let embedUrl = appData.music.url;
         // Convertir l'URL standard en URL d'intégration si nécessaire
         if (embedUrl.includes('spotify.com') && !embedUrl.includes('/embed')) {
+            // Remove intl-{country}/ part if present (e.g., intl-fr/, intl-de/, intl-en-gb/)
+            embedUrl = embedUrl.replace(SPOTIFY_INTL_LOCALE_PATTERN, '/');
+            // Add /embed/ after spotify.com/
             embedUrl = embedUrl.replace('spotify.com/', 'spotify.com/embed/');
         }
         
@@ -614,13 +623,38 @@ function toggleEditMode() {
     document.getElementById('edit-indicator').classList.toggle('hidden', !isEditMode);
     
     if (isEditMode) {
+        // Load Spotify settings
         document.getElementById('spotify-url-input').value = appData.music.url || '';
         document.getElementById('spotify-enabled-input').checked = appData.music.enabled || false;
+        
+        // Load general settings
+        document.getElementById('edit-title').value = appData.title || '';
+        document.getElementById('edit-subtitle').value = appData.subtitle || '';
+        document.getElementById('edit-to-name').value = appData.toName || '';
+        document.getElementById('edit-from-name').value = appData.fromName || '';
+        document.getElementById('edit-passing-score').value = appData.passingScore || 4;
     }
     
     renderPhotos();
     renderPrograms();
     renderQuestion();
+}
+
+function updateGeneralSettings() {
+    appData.title = document.getElementById('edit-title').value;
+    appData.subtitle = document.getElementById('edit-subtitle').value;
+    appData.toName = document.getElementById('edit-to-name').value;
+    appData.fromName = document.getElementById('edit-from-name').value;
+    const passingScoreValue = parseInt(document.getElementById('edit-passing-score').value);
+    appData.passingScore = isNaN(passingScoreValue) ? appData.passingScore : passingScoreValue;
+    
+    saveData();
+    updateNames();
+    
+    // Update page title
+    document.title = `💕 ${appData.title} - ${appData.toName}`;
+    
+    alert(`✅ Paramètres généraux mis à jour!\n\n${EXPORT_REMINDER_MESSAGE}`);
 }
 
 function updateSpotify() {
@@ -710,6 +744,11 @@ function exportData() {
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
+    
+    // Show instructions
+    setTimeout(() => {
+        alert(EXPORT_SUCCESS_MESSAGE);
+    }, 100);
 }
 
 function deleteCurrentQuestion() {
@@ -810,7 +849,7 @@ document.addEventListener('click', (e) => {
         const originalText = target.innerText.trim();
         if (!originalText) return;
 
-        const newText = prompt("Modifier le texte :", originalText);
+        const newText = prompt("✏️ Modifier le texte :", originalText);
         
         if (newText !== null && newText !== originalText) {
             target.innerText = newText;
@@ -818,6 +857,8 @@ document.addEventListener('click', (e) => {
             // Try to sync with appData if it's a known field
             syncTextWithData(target, newText);
             saveData();
+            
+            alert(`✅ Texte modifié!\n\n${EXPORT_REMINDER_MESSAGE}`);
         }
     }
 });
@@ -826,10 +867,11 @@ function syncTextWithData(el, text) {
     const id = el.id;
     if (id === 'header-to-name' || id === 'proposal-to-name' || id === 'final-to-name') {
         appData.toName = text;
+        updateNames();
     } else if (id === 'proposal-from-name' || id === 'final-from-name') {
         appData.fromName = text;
-    } else if (el.tagName === 'H2' && el.closest('.section-title')) {
-        // Handle section titles if needed, though they aren't in appData currently
-        // We could add them to appData for persistence
+        updateNames();
     }
+    // Note: Section titles and other texts are modified visually but not saved to appData
+    // Use the "Paramètres Généraux" section in edit mode for persistent changes
 }

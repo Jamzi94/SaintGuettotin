@@ -121,6 +121,30 @@
     <!-- Edit Panel -->
     <div class="edit-panel hidden" id="edit-panel">
         <h3>⚙️ Mode Édition</h3>
+        
+        <!-- Help section -->
+        <div style="background: #fff3cd; padding: 0.75rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.85rem; border-left: 4px solid #ffc107;">
+            <strong>ℹ️ Comment sauvegarder vos modifications:</strong>
+            <ol style="margin: 0.5rem 0 0 1.2rem; padding: 0;">
+                <li>Modifiez les éléments (double-clic sur photos/questions/programmes)</li>
+                <li>Cliquez sur "📥 Exporter pour GitHub Pages" en bas</li>
+                <li>Remplacez data.json dans votre dépôt GitHub</li>
+                <li>Committez et poussez les changements</li>
+            </ol>
+            <em style="color: #856404; display: block; margin-top: 0.5rem;">⚠️ Les modifications sont temporaires jusqu'à l'export!</em>
+        </div>
+        
+        <!-- Text Settings -->
+        <div class="edit-inputs">
+            <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">📝 Paramètres Généraux</p>
+            <input type="text" id="edit-title" placeholder="Titre principal">
+            <input type="text" id="edit-subtitle" placeholder="Sous-titre">
+            <input type="text" id="edit-to-name" placeholder="Nom du destinataire">
+            <input type="text" id="edit-from-name" placeholder="Nom de l'expéditeur">
+            <input type="number" id="edit-passing-score" placeholder="Score minimum" min="1" style="width: auto;">
+            <button class="edit-btn edit-btn-blue" onclick="updateGeneralSettings()">Mettre à jour</button>
+        </div>
+        
         <div class="edit-buttons">
             <button class="edit-btn edit-btn-blue" onclick="addPhoto()">➕ Ajouter une photo</button>
             <button class="edit-btn edit-btn-green" onclick="addQuestion()">➕ Ajouter une question</button>
