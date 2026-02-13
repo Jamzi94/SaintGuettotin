@@ -1,18 +1,18 @@
 {
   "title": "Eh oh, c'est pour toi...",
   "subtitle": "Oui toi, regarde en bas",
-  "fromName": "Ton J (le beau gosse)",
-  "toName": "RoroLasticot",
+  "fromName": "Demande explicite de BM",
+  "toName": "RoMan, guerriere du 18eme (et askip du 94)",
   "passingScore": 4,
   "photos": [
     {
       "id": 1770987289812,
       "url": "https://www.chateaudeau.com/sites/default/files/product_image/fontaine-touch-pour-famille.jpg",
-      "x": 12.013888,
-      "y": 261,
+      "x": 11.73611,
+      "y": 256,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "pulse",
+      "sticker": "fire"
     },
     {
       "id": 1770987533325,
@@ -25,21 +25,21 @@
     },
     {
       "id": 1770987562617,
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fVMZ5jba6d9z_NIpfWnk120UkReGbACrKg&s",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fVMZ5jba6d9z_NIpfWnk120UkReGbACrKg&amp;s",
       "x": 29.791667,
       "y": 312,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "pulse",
+      "sticker": "fire"
     },
     {
       "id": 1770988207405,
       "url": "https://i.ibb.co/1g29Cn8/517-B422-A-C57-C-478-B-A323-39-D49-D9-C795-D.jpg",
-      "x": 57.152778,
-      "y": 462,
+      "x": 49.513889,
+      "y": 500,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "shake",
+      "sticker": "heart-pink"
     },
     {
       "id": 1770988224403,
@@ -71,7 +71,7 @@
     {
       "id": 1770988253606,
       "url": "https://i.ibb.co/RGbnTsQg/4024-FB40-BAE8-4-C9-D-A503-2-F976785-DDDB.jpg",
-      "x": 62.847223,
+      "x": 65.625001,
       "y": 782,
       "rotation": 0,
       "effect": "none",
@@ -81,19 +81,19 @@
       "id": 1770988269504,
       "url": "https://i.ibb.co/pvcChn0W/6685356-D-AE16-4613-95-D8-410-C5-D4-A2686.jpg",
       "x": 27.22222,
-      "y": 1589,
+      "y": 1618,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "rainbow",
+      "sticker": "rocket"
     },
     {
       "id": 1770988279040,
       "url": "https://i.ibb.co/G3PbnGrN/D92-D4-E2-A-0387-4-FAB-B87-A-97-FD91520-A33.jpg",
-      "x": 36.388889,
-      "y": 677,
+      "x": 36.25,
+      "y": 675,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "zoom",
+      "sticker": "cat-heart"
     },
     {
       "id": 1770988372688,
@@ -102,16 +102,16 @@
       "y": 917,
       "rotation": 0,
       "effect": "none",
-      "sticker": "none"
+      "sticker": "flower"
     },
     {
       "id": 1770988385455,
       "url": "https://i.ibb.co/j1cgVSC/Sujet-7.png",
-      "x": 63.333334,
-      "y": 1057,
+      "x": 67.430556,
+      "y": 1054,
       "rotation": 0,
       "effect": "none",
-      "sticker": "none"
+      "sticker": "sparkles"
     },
     {
       "id": 1770988623450,
@@ -120,7 +120,7 @@
       "y": 1431,
       "rotation": 0,
       "effect": "none",
-      "sticker": "none"
+      "sticker": "crown"
     },
     {
       "id": 1770988702666,
@@ -147,7 +147,7 @@
       "y": 1351,
       "rotation": 0,
       "effect": "none",
-      "sticker": "none"
+      "sticker": "moon"
     },
     {
       "id": 1770988769096,
@@ -161,8 +161,8 @@
     {
       "id": 1770988791560,
       "url": "https://i.ibb.co/KzRnV7mV/Sujet-2.png",
-      "x": 78.124999,
-      "y": 965,
+      "x": 82.708332,
+      "y": 967,
       "rotation": 0,
       "effect": "none",
       "sticker": "none"
@@ -173,22 +173,22 @@
       "x": 61.38889,
       "y": 1437,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "spin",
+      "sticker": "crown"
     },
     {
       "id": 1770988887579,
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Xyzkyhahnux3cuAD3H9O2xFDqMyygTD-jA&s",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Xyzkyhahnux3cuAD3H9O2xFDqMyygTD-jA&amp;s",
       "x": 48.055557,
       "y": 236,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "float",
+      "sticker": "crown"
     },
     {
       "id": 1770988995909,
       "url": "https://i.ibb.co/Kx9hKyp3/Autocollant.avif",
-      "x": 50.416667,
+      "x": 52.361111,
       "y": 965,
       "rotation": 0,
       "effect": "none",
@@ -200,12 +200,12 @@
       "x": 21.458333,
       "y": 577,
       "rotation": 0,
-      "effect": "none",
-      "sticker": "none"
+      "effect": "glow",
+      "sticker": "champagne"
     },
     {
       "id": 1770989182057,
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16SsgnWC6QdY5t6A_Cftg48ro5zQZKWqy6w&s",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16SsgnWC6QdY5t6A_Cftg48ro5zQZKWqy6w&amp;s",
       "x": 87.222222,
       "y": 302,
       "rotation": 0,
@@ -214,7 +214,7 @@
     },
     {
       "id": 1770989219592,
-      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvSGrzcwnuR-2jORMyWhf94eVtm_GVM7n_Q&s",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvSGrzcwnuR-2jORMyWhf94eVtm_GVM7n_Q&amp;s",
       "x": 86.805555,
       "y": 671,
       "rotation": 0,
@@ -228,7 +228,7 @@
       "y": 943,
       "rotation": 0,
       "effect": "none",
-      "sticker": "none"
+      "sticker": "rocket"
     }
   ],
   "questions": [
@@ -236,20 +236,20 @@
       "id": 1,
       "question": "A côté de quoi se situe la Bastille ?",
       "answers": [
-        "D’une prise électrique🔌",
-        "D’un opéra où les gens crient très fort mais avec élégance",
-        "Frr… t’as Google Maps non ?",
+        "D'une prise",
+        "D'un opéra ",
+        "Frr… t'as Google Maps non ?",
         "Dans le Mordor du sud parisien, là où même les pigeons hésitent 🐦🌫️"
       ],
       "correctAnswer": 1,
-      "correctImage": "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/correct-answer-sound-effect.mp3",
-      "incorrectImage": "https://media.giphy.com/media/ZEobigiwise5sMbNX5/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/wrong-answer-sound-effect.mp3"
+      "correctImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/correct.mp3",
+      "incorrectImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/wrong.mp3"
     },
     {
       "id": 2,
-      "question": "Quand le R prétend lâcher des pets de fouf… en vrai c’est :",
+      "question": "Quand le R prétend lâcher des pets de fouf… en vrai c'est :",
       "answers": [
         "Un authentique pet de fouf, classe et assumé",
         "Un pet timide, discret, introverti et non parfumé 🫥🌼",
@@ -257,89 +257,91 @@
         "Sa cuisse qui claque bien vite provoquant un bruit de pet comme tar l'époque ou on faisait la meme avec nos dessous de bras"
       ],
       "correctAnswer": 3,
-      "correctImage": "https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/tada-fanfare-a.mp3",
-      "incorrectImage": "https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/failure-tuba.mp3"
+      "correctImage": "https://media.tenor.com/X2nEQjotm0cAAAPo/smells-so-good-eliza.mp4",
+      "correctSound": "https://www.myinstants.com/media/sounds/sa-sent-bon.mp3",
+      "incorrectImage": "https://media.tenor.com/s3qAdQmkt78AAAPo/james-evans-good-times.mp4",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/ca-pue-qc.mp3"
     },
     {
       "id": 3,
-      "question": "Qu’est-ce qui est le mieux chez le R ?",
+      "question": "Qu'est-ce qui est le mieux chez le R ?",
       "answers": [
         "Son mode fontaine à eau illimitée , pour hydrater les foules assoiffées",
-        "Sa bonne humeur radioactive et sa folie contagieuse ☢️😆",
-        "Sa voix entre princesse Disney et PornStar (non, pas le cocktail), son paff surdimensionné et ses trois 🍑🍑🍑 (pour un confort inégalé)",
+        "Sa bonne humeur et sa folie contagieuse ",
+        "Sa voix entre princesse Disney et PornStar (pas cocktail), son paff surdimensionné et ses trois 🍑🍑🍑 (pour un confort inégalé)",
         "Le combo improbable : génie incompris + folle du bus"
       ],
-      "correctAnswer": 2,
-      "correctImage": "https://media.giphy.com/media/g9582DNuQppxC/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/applause.mp3",
-      "incorrectImage": "https://media.giphy.com/media/fXnRObM8Q0RkOmR5nf/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/sad-trombone.mp3"
+      "correctAnswer": 3,
+      "correctImage": "https://media.tenor.com/AZSuxNC5SaEAAAPo/tim-and-eric-cringe.mp4",
+      "correctSound": "https://www.myinstants.com/media/sounds/crazy-test.mp3",
+      "incorrectImage": "https://media.tenor.com/yj0ADLLcoCcAAAPo/quoi-comment-ca-mon-reuf.mp4",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/comment-ca-mon-reuf-sans-le-quoi.mp3"
     },
     {
       "id": 4,
       "question": "Si Romane te recommande un chirurgien turc tu :",
       "answers": [
         "Actives le mode bip bip et fuis 🏃💨",
-        "Tu fonces direct parce qu’elle a des bons plans plus solides qu’un kebab à 3h du mat (preuve vivante avec ses trois fesses, mamama)",
-        "Tu l’emmènes au grec du coin (plot twist : lui aussi est turc)"
+        "Tu fonces direct parce qu'elle a des bons plans plus solides qu'un kebab à 3h du mat (preuve vivante avec ses trois fesses, mamama)",
+        "Tu l'emmènes au grec du coin (plot twist : lui aussi est turc)"
       ],
-      "correctAnswer": 0,
-      "correctImage": "https://media.giphy.com/media/3o7TKF1fSIs1R19B8k/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/victory-sound-effect.mp3",
-      "incorrectImage": "https://media.giphy.com/media/26ueYUlPAmUkTBAM8/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/price-is-right-losing-horn.mp3"
+      "correctAnswer": 1,
+      "correctImage": "https://media.tenor.com/6Zjue0t2Uw0AAAPo/funny-dance.mp4",
+      "correctSound": "https://www.myinstants.com/media/sounds/dom-dom-yes-yes.mp3",
+      "incorrectImage": "https://media.tenor.com/Vsx8boEl9lUAAAPo/angry-panda.mp4",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/looser-01_6HvlTvd.mp3"
     },
     {
       "id": 5,
-      "question": "Quelle est la définition de “sussoter” ?",
+      "question": "Quelle est la définition de \"sussoter\" ?",
       "answers": [
         "Un cocktail linguistique élégant et subtile entre susurrer, sucer et toussoter servi avec un geste d'illetrisme",
         "Un mot étrangement stylé né à 4h du matin dans un cerveau en freestyle total dans mec plutot BG…"
       ],
       "correctAnswer": 0,
-      "correctImage": "https://media.giphy.com/media/111ebonMs90YLu/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/ding-sound-effect.mp3",
-      "incorrectImage": "https://media.giphy.com/media/1ZkMDj88mQ1rO/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/buzzer-wrong.mp3"
+      "correctImage": "https://media.tenor.com/aX2Y2LhH77MAAAPo/cedy-hello.mp4",
+      "correctSound": "https://www.myinstants.com/media/sounds/touch-my-tralala_voYRmI9.mp3",
+      "incorrectImage": "https://media.tenor.com/RrDeqPO5tCEAAAPo/wrong-answer-family-feud-canada.mp4",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/oh-mince-dora.mp3"
     },
     {
       "id": 6,
-      "question": "Qu’est-ce Romane préfère chez le J ?",
+      "question": "Qu'est-ce Romane préfère chez le J ?",
       "answers": [
         "BM 😌",
-        "BM air pro max +",
+        "BM air pro max ++",
         "BBM version deluxe maxi best of",
         "Ses cheveux , son charisme legendaire et son intellignece hors norme (non je dec encore BM)"
       ],
-      "correctAnswer": 3,
-      "correctImage": "https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/yeah-sound-effect.mp3",
-      "incorrectImage": "https://media.giphy.com/media/d2lcHJTG5Tscg/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/oh-no-sound-effect.mp3"
+      "correctAnswer": 1,
+      "correctImage": "https://media.tenor.com/L6NT6lWdeQUAAAPo/belle-engin-evangelion.mp4",
+      "correctSound": "https://www.myinstants.com/media/sounds/belle-bite.mp3",
+      "incorrectImage": "https://media.tenor.com/1OK2Woyhz-AAAAPo/try-again-never-again.mp4",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/priceisrightfail_1_1.mp3"
     }
   ],
   "programs": [
     {
       "id": 1,
-      "title": "Soirée Swag",
-      "description": "Classique mais efficace, t'as vu le niveau",
+      "title": "Back to slavery time",
+      "description": "Qui n'a jamais rêvé d'avoir son propre negre ?(pas toi j'espère)",
       "activities": [
-        "Restaurant italien (j'paye)",
-        "Promenade romantique (ou pas)",
-        "Verre de vin (ou jus d'orange)"
+        "Brunch préparé par votre esclave préféré",
+        "Suivi d'un petit massage et de quelques petites intentions pour madame.",
+        "L'après-midi, on refait le monde autour d'un bedo, de champagne/vin/champomy",
+        "Et pour finir, votre nègre se transforme en traiteur japonais/italien pour vous élaborer un repas des plus délectable "
       ],
-      "emoji": "🌹"
+      "emoji": "🪢💀🌾"
     },
     {
       "id": 2,
-      "title": "Journée Aventure",
-      "description": "Pour les téméraires qui veulent mourir ensemble",
+      "title": "Journée Aventure Sous la pluie et le froid ",
+      "description": "Pour les téméraires qui veulent soufrir/mourir ensemble",
       "activities": [
-        "Escape game (on va se planter)",
-        "Déjeuner bizarre",
-        "Activité surprise (spoiler: c'est nul)"
+        "Petit brunch en extérieur (inch je peux encore réserver) ",
+        "Suivi d'une petite sortie au musée ou exposition ",
+        "Petit resto selon la convenance de madame ",
+        "Et enfin finir la soirée en DJ set/ Karaoke/quai de Paris (toujours selon votre convenance , film de me faire battre 🥲)"
       ],
       "emoji": "🎯"
     },
@@ -350,18 +352,27 @@
       "activities": [
         "Cuisiner ensemble (tu cuisines)",
         "Marathon Netflix",
-        "Soirée jeux (je gagne toujours)"
+        "Soirée jeux/petou (ps : je gagne toujours)"
       ],
       "emoji": "🏠"
     }
   ],
   "celebrationGifs": [
-    "https://media.giphy.com/media/VIDHHRDgUIcYgAMVcF/giphy.gif",
-    "https://media.giphy.com/media/lp3GUtG2waC88/giphy.gif",
-    "https://media.giphy.com/media/26BRyql7J3iOx875u/giphy.gif"
+    "https://media.tenor.com/X15e67QrANUAAAPo/the-office.mp4",
+    "https://media.tenor.com/2Iq1t8aULigAAAPo/ronaldo-topless-ronaldo.mp4",
+    "https://media.tenor.com/BFCaHK42CxgAAAPo/squid-game-squid-game-3.mp4",
+    "https://media.tenor.com/msiTBjc4uoIAAAPo/party-time.mp4",
+    "https://media.tenor.com/UQcfPJ_dv8kAAAPo/taylor-swift-taylor-cam.mp4",
+    "https://media.tenor.com/6FA7eX2JskwAAAPo/celebration-gastby.mp4",
+    "https://media.tenor.com/sjaFs_wpN38AAAPo/the-office-celebration.mp4",
+    "https://media.tenor.com/Ce309bmw-fQAAAPo/be.mp4"
   ],
   "music": {
     "enabled": true,
-    "url": "https://open.spotify.com/intl-fr/track/518c5Dr5EmpzACX268Aeqs?si=6dc62370d2344a28"
+    "url": "https://open.spotify.com/intl-fr/track/3QnQVr6HnDnqmheUGphA9p"
+  },
+  "celebrationMusic": {
+    "enabled": true,
+    "url": "https://www.myinstants.com/media/sounds/celebrate-good-times-mp3cut_0M5JlKv.mp3"
   }
 }

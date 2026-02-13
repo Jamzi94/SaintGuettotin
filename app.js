@@ -9,7 +9,8 @@ let appData = {
     questions: [],
     programs: [],
     celebrationGifs: [],
-    music: { enabled: false, url: "" }
+    music: { enabled: false, url: "" },
+    celebrationMusic: { enabled: false, url: "" }
 };
 
 // ==================== STATE ====================
@@ -33,6 +34,9 @@ let dragStartX = 0;
 let dragStartY = 0;
 let photoStartX = 0;
 let photoStartY = 0;
+
+// Celebration audio
+let celebrationAudio = null;
 
 // ==================== CONSTANTS ====================
 const SPOTIFY_INTL_LOCALE_PATTERN = /\/intl-[a-z]{2}(-[a-z]{2})?\//i;
@@ -170,6 +174,14 @@ function showSection(step) {
     
     if (step === 'quiz-result') {
         renderQuizResult();
+    }
+    
+    if (step === 'celebration') {
+        playCelebrationMusic();
+    }
+    
+    if (step === 'final') {
+        stopCelebrationMusic();
     }
 }
 
@@ -541,6 +553,24 @@ function renderSpotify() {
         container.classList.remove('hidden');
     } else {
         container.classList.add('hidden');
+    }
+}
+
+function playCelebrationMusic() {
+    if (appData.celebrationMusic && appData.celebrationMusic.enabled && appData.celebrationMusic.url) {
+        stopCelebrationMusic();
+        celebrationAudio = new Audio(appData.celebrationMusic.url);
+        celebrationAudio.loop = true;
+        celebrationAudio.volume = 0.5;
+        celebrationAudio.play().catch(e => console.error('Celebration music play failed:', e));
+    }
+}
+
+function stopCelebrationMusic() {
+    if (celebrationAudio) {
+        celebrationAudio.pause();
+        celebrationAudio.currentTime = 0;
+        celebrationAudio = null;
     }
 }
 
