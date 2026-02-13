@@ -526,8 +526,8 @@ function renderSpotify() {
         let embedUrl = appData.music.url;
         // Convertir l'URL standard en URL d'intégration si nécessaire
         if (embedUrl.includes('spotify.com') && !embedUrl.includes('/embed')) {
-            // Remove intl-{country}/ part if present (e.g., intl-fr/, intl-de/)
-            embedUrl = embedUrl.replace(/\/intl-[a-z]{2}\//i, '/');
+            // Remove intl-{country}/ part if present (e.g., intl-fr/, intl-de/, intl-en-gb/)
+            embedUrl = embedUrl.replace(/\/intl-[a-z]{2}(-[a-z]{2})?\//i, '/');
             // Add /embed/ after spotify.com/
             embedUrl = embedUrl.replace('spotify.com/', 'spotify.com/embed/');
         }
