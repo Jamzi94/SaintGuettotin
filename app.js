@@ -35,7 +35,10 @@ let photoStartX = 0;
 let photoStartY = 0;
 
 // ==================== CONSTANTS ====================
+const SPOTIFY_INTL_LOCALE_PATTERN = /\/intl-[a-z]{2}(-[a-z]{2})?\//i;
 const EXPORT_REMINDER_MESSAGE = '⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.';
+const EXPORT_SUCCESS_MESSAGE = '✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.';
+
 
 const funnyMessages = [
     "T'ES NULLE A L'HUILE 😂",
@@ -527,7 +530,7 @@ function renderSpotify() {
         // Convertir l'URL standard en URL d'intégration si nécessaire
         if (embedUrl.includes('spotify.com') && !embedUrl.includes('/embed')) {
             // Remove intl-{country}/ part if present (e.g., intl-fr/, intl-de/, intl-en-gb/)
-            embedUrl = embedUrl.replace(/\/intl-[a-z]{2}(-[a-z]{2})?\//i, '/');
+            embedUrl = embedUrl.replace(SPOTIFY_INTL_LOCALE_PATTERN, '/');
             // Add /embed/ after spotify.com/
             embedUrl = embedUrl.replace('spotify.com/', 'spotify.com/embed/');
         }
@@ -642,7 +645,8 @@ function updateGeneralSettings() {
     appData.subtitle = document.getElementById('edit-subtitle').value;
     appData.toName = document.getElementById('edit-to-name').value;
     appData.fromName = document.getElementById('edit-from-name').value;
-    appData.passingScore = parseInt(document.getElementById('edit-passing-score').value) || 4;
+    const passingScoreValue = parseInt(document.getElementById('edit-passing-score').value);
+    appData.passingScore = isNaN(passingScoreValue) ? appData.passingScore : passingScoreValue;
     
     saveData();
     updateNames();
@@ -743,7 +747,7 @@ function exportData() {
     
     // Show instructions
     setTimeout(() => {
-        alert(`✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.`);
+        alert(EXPORT_SUCCESS_MESSAGE);
     }, 100);
 }
 
