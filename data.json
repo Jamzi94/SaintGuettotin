@@ -6,92 +6,227 @@
   "passingScore": 4,
   "photos": [
     {
-      "id": 1,
-      "url": "https://picsum.photos/seed/love1/300/400",
-      "x": 5,
-      "y": 100,
-      "rotation": -5,
+      "id": 1770987289812,
+      "url": "https://www.chateaudeau.com/sites/default/files/product_image/fontaine-touch-pour-famille.jpg",
+      "x": 12.013888,
+      "y": 261,
+      "rotation": 0,
       "effect": "none",
       "sticker": "none"
     },
     {
-      "id": 2,
-      "url": "https://picsum.photos/seed/love2/300/300",
-      "x": 35,
-      "y": 50,
-      "rotation": 3,
-      "effect": "none",
-      "sticker": "heart-pink"
-    },
-    {
-      "id": 3,
-      "url": "https://picsum.photos/seed/love3/300/400",
-      "x": 65,
-      "y": 150,
-      "rotation": -2,
-      "effect": "pulse",
-      "sticker": "none"
-    },
-    {
-      "id": 4,
-      "url": "https://picsum.photos/seed/love4/300/300",
-      "x": 15,
-      "y": 350,
-      "rotation": 5,
-      "effect": "none",
-      "sticker": "star"
-    },
-    {
-      "id": 5,
-      "url": "https://picsum.photos/seed/love5/300/400",
-      "x": 50,
-      "y": 400,
-      "rotation": -3,
-      "effect": "float",
-      "sticker": "heart-red"
-    },
-    {
-      "id": 6,
-      "url": "https://picsum.photos/seed/love6/300/300",
-      "x": 80,
-      "y": 320,
-      "rotation": 4,
+      "id": 1770987533325,
+      "url": "https://cdn.paris.fr/paris/2020/09/16/huge-93416ea55c07a4f38c6005b7abc4cb26.jpg",
+      "x": 78.402778,
+      "y": -40,
+      "rotation": 0,
       "effect": "none",
       "sticker": "none"
     },
     {
-      "id": 7,
-      "url": "https://picsum.photos/seed/love7/300/400",
-      "x": 25,
-      "y": 550,
-      "rotation": -4,
-      "effect": "shine",
-      "sticker": "flower"
-    },
-    {
-      "id": 8,
-      "url": "https://picsum.photos/seed/love8/300/300",
-      "x": 60,
-      "y": 600,
-      "rotation": 2,
+      "id": 1770987562617,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-fVMZ5jba6d9z_NIpfWnk120UkReGbACrKg&s",
+      "x": 29.791667,
+      "y": 312,
+      "rotation": 0,
       "effect": "none",
       "sticker": "none"
     },
     {
-      "id": 9,
-      "url": "https://picsum.photos/seed/love9/300/400",
-      "x": 85,
-      "y": 520,
-      "rotation": -1,
-      "effect": "glow",
-      "sticker": "heart-pink"
+      "id": 1770988207405,
+      "url": "https://i.ibb.co/1g29Cn8/517-B422-A-C57-C-478-B-A323-39-D49-D9-C795-D.jpg",
+      "x": 57.152778,
+      "y": 462,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
     },
     {
-      "id": 10,
-      "url": "https://picsum.photos/seed/love10/300/300",
-      "x": 45,
-      "y": 750,
-      "rotation": 6,
+      "id": 1770988224403,
+      "url": "https://i.ibb.co/TxRbLg7p/EC183-ED8-A0-DE-4-C1-A-93-FB-D257-C21-D60-A5.jpg",
+      "x": 71.249999,
+      "y": 204,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988234319,
+      "url": "https://i.ibb.co/Zz4dRsQX/E9-A70-FC3-94-A5-48-A1-95-A3-D8-CC9-ACBA4-C7.jpg",
+      "x": 1.319444,
+      "y": 497,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988244339,
+      "url": "https://i.ibb.co/hRxRZBF8/F0-A8-B8-E0-7007-4049-AA32-9-A8-E2-A095-D28.jpg",
+      "x": 17.777776,
+      "y": 4,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988253606,
+      "url": "https://i.ibb.co/RGbnTsQg/4024-FB40-BAE8-4-C9-D-A503-2-F976785-DDDB.jpg",
+      "x": 62.847223,
+      "y": 782,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988269504,
+      "url": "https://i.ibb.co/pvcChn0W/6685356-D-AE16-4613-95-D8-410-C5-D4-A2686.jpg",
+      "x": 27.22222,
+      "y": 1589,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988279040,
+      "url": "https://i.ibb.co/G3PbnGrN/D92-D4-E2-A-0387-4-FAB-B87-A-97-FD91520-A33.jpg",
+      "x": 36.388889,
+      "y": 677,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988372688,
+      "url": "https://i.ibb.co/Wvc5L7JC/Sujet-8.png",
+      "x": 6.944445,
+      "y": 917,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988385455,
+      "url": "https://i.ibb.co/j1cgVSC/Sujet-7.png",
+      "x": 63.333334,
+      "y": 1057,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988623450,
+      "url": "https://i.ibb.co/39t7y3yK/Sujet-6.png",
+      "x": 13.055557,
+      "y": 1431,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988702666,
+      "url": "https://i.ytimg.com/vi/o1-oFdVFbvs/sddefault.jpg",
+      "x": 74.513888,
+      "y": 478,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988731393,
+      "url": "https://i.ibb.co/93Y59Yv5/Sujet-5.png",
+      "x": 39.791666,
+      "y": -9,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988751102,
+      "url": "https://i.ibb.co/DH3N3N0z/Sujet-4.png",
+      "x": 38.055557,
+      "y": 1351,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988769096,
+      "url": "https://i.ibb.co/RkJhVC1x/Sujet-3.png",
+      "x": 18.402779,
+      "y": 1135,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988791560,
+      "url": "https://i.ibb.co/KzRnV7mV/Sujet-2.png",
+      "x": 78.124999,
+      "y": 965,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988846702,
+      "url": "https://i.ibb.co/Mkk56Bpz/Sujet.png",
+      "x": 61.38889,
+      "y": 1437,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988887579,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Xyzkyhahnux3cuAD3H9O2xFDqMyygTD-jA&s",
+      "x": 48.055557,
+      "y": 236,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770988995909,
+      "url": "https://i.ibb.co/Kx9hKyp3/Autocollant.avif",
+      "x": 50.416667,
+      "y": 965,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770989092564,
+      "url": "https://i.ibb.co/KpMn89P8/Capture-d-cran-2026-02-13-14-13-57.png",
+      "x": 21.458333,
+      "y": 577,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770989182057,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR16SsgnWC6QdY5t6A_Cftg48ro5zQZKWqy6w&s",
+      "x": 87.222222,
+      "y": 302,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770989219592,
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvSGrzcwnuR-2jORMyWhf94eVtm_GVM7n_Q&s",
+      "x": 86.805555,
+      "y": 671,
+      "rotation": 0,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 1770989315617,
+      "url": "https://i.ibb.co/ym385JVM/Sujet-9.png",
+      "x": 29.652778,
+      "y": 943,
+      "rotation": 0,
       "effect": "none",
       "sticker": "none"
     }
@@ -107,10 +242,10 @@
         "Dans le Mordor du sud parisien, là où même les pigeons hésitent 🐦🌫️"
       ],
       "correctAnswer": 1,
-      "correctImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
-      "correctSound": "https://www.myinstants.com/media/sounds/correct.mp3",
-      "incorrectImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
-      "incorrectSound": "https://www.myinstants.com/media/sounds/wrong.mp3"
+      "correctImage": "https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/correct-answer-sound-effect.mp3",
+      "incorrectImage": "https://media.giphy.com/media/ZEobigiwise5sMbNX5/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/wrong-answer-sound-effect.mp3"
     },
     {
       "id": 2,
@@ -122,10 +257,10 @@
         "Sa cuisse qui claque bien vite provoquant un bruit de pet comme tar l'époque ou on faisait la meme avec nos dessous de bras"
       ],
       "correctAnswer": 3,
-      "correctImage": "",
-      "correctSound": "",
-      "incorrectImage": "",
-      "incorrectSound": ""
+      "correctImage": "https://media.giphy.com/media/3o6Zt6ML6BklcajjsA/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/tada-fanfare-a.mp3",
+      "incorrectImage": "https://media.giphy.com/media/l3q2K5jinAlChoCLS/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/failure-tuba.mp3"
     },
     {
       "id": 3,
@@ -137,10 +272,10 @@
         "Le combo improbable : génie incompris + folle du bus"
       ],
       "correctAnswer": 2,
-      "correctImage": "",
-      "correctSound": "",
-      "incorrectImage": "",
-      "incorrectSound": ""
+      "correctImage": "https://media.giphy.com/media/g9582DNuQppxC/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/applause.mp3",
+      "incorrectImage": "https://media.giphy.com/media/fXnRObM8Q0RkOmR5nf/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/sad-trombone.mp3"
     },
     {
       "id": 4,
@@ -151,10 +286,10 @@
         "Tu l’emmènes au grec du coin (plot twist : lui aussi est turc)"
       ],
       "correctAnswer": 0,
-      "correctImage": "",
-      "correctSound": "",
-      "incorrectImage": "",
-      "incorrectSound": ""
+      "correctImage": "https://media.giphy.com/media/3o7TKF1fSIs1R19B8k/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/victory-sound-effect.mp3",
+      "incorrectImage": "https://media.giphy.com/media/26ueYUlPAmUkTBAM8/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/price-is-right-losing-horn.mp3"
     },
     {
       "id": 5,
@@ -164,10 +299,10 @@
         "Un mot étrangement stylé né à 4h du matin dans un cerveau en freestyle total dans mec plutot BG…"
       ],
       "correctAnswer": 0,
-      "correctImage": "",
-      "correctSound": "",
-      "incorrectImage": "",
-      "incorrectSound": ""
+      "correctImage": "https://media.giphy.com/media/111ebonMs90YLu/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/ding-sound-effect.mp3",
+      "incorrectImage": "https://media.giphy.com/media/1ZkMDj88mQ1rO/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/buzzer-wrong.mp3"
     },
     {
       "id": 6,
@@ -179,10 +314,10 @@
         "Ses cheveux , son charisme legendaire et son intellignece hors norme (non je dec encore BM)"
       ],
       "correctAnswer": 3,
-      "correctImage": "",
-      "correctSound": "",
-      "incorrectImage": "",
-      "incorrectSound": ""
+      "correctImage": "https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/yeah-sound-effect.mp3",
+      "incorrectImage": "https://media.giphy.com/media/d2lcHJTG5Tscg/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/oh-no-sound-effect.mp3"
     }
   ],
   "programs": [
@@ -227,6 +362,6 @@
   ],
   "music": {
     "enabled": true,
-    "url": "https://open.spotify.com/embed/playlist/37i9dQZF1DX4pUKp1pUTsq"
+    "url": "https://open.spotify.com/intl-fr/track/518c5Dr5EmpzACX268Aeqs?si=6dc62370d2344a28"
   }
 }
