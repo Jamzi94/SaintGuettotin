@@ -560,7 +560,7 @@ function playCelebrationMusic() {
         celebrationAudio = new Audio(appData.celebrationMusic.url);
         celebrationAudio.loop = true;
         celebrationAudio.volume = 0.5;
-        celebrationAudio.play().catch(e => console.log('Celebration music play failed:', e));
+        celebrationAudio.play().catch(e => console.error('Celebration music play failed:', e));
     }
 }
 
