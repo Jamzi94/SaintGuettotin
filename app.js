@@ -523,6 +523,9 @@ function renderSpotify() {
         let embedUrl = appData.music.url;
         // Convertir l'URL standard en URL d'intégration si nécessaire
         if (embedUrl.includes('spotify.com') && !embedUrl.includes('/embed')) {
+            // Remove intl-XX/ part if present (e.g., intl-fr/)
+            embedUrl = embedUrl.replace(/\/intl-[a-z]{2}\//i, '/');
+            // Add /embed/ after spotify.com/
             embedUrl = embedUrl.replace('spotify.com/', 'spotify.com/embed/');
         }
         
@@ -710,6 +713,11 @@ function exportData() {
     document.body.appendChild(downloadAnchorNode);
     downloadAnchorNode.click();
     downloadAnchorNode.remove();
+    
+    // Show instructions
+    setTimeout(() => {
+        alert('✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.');
+    }, 100);
 }
 
 function deleteCurrentQuestion() {
