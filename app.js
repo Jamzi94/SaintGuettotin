@@ -43,6 +43,27 @@ const SPOTIFY_INTL_LOCALE_PATTERN = /\/intl-[a-z]{2}(-[a-z]{2})?\//i;
 const EXPORT_REMINDER_MESSAGE = '⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.';
 const EXPORT_SUCCESS_MESSAGE = '✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.';
 
+// ==================== UTILITY FUNCTIONS ====================
+/**
+ * Renders media element (img or video) based on URL extension
+ * @param {string} url - The media URL
+ * @param {string} altText - Alt text for the media
+ * @param {string} className - CSS class name for the element
+ * @returns {string} HTML string for img or video element
+ */
+function renderMediaElement(url, altText, className) {
+    if (!url) return '';
+    
+    // Check if URL ends with .mp4 (case insensitive)
+    const isVideo = /\.mp4(\?|$)/i.test(url);
+    
+    if (isVideo) {
+        return `<video src="${url}" class="${className}" aria-label="${altText}" autoplay loop muted playsinline></video>`;
+    } else {
+        return `<img src="${url}" class="${className}" alt="${altText}" onerror="this.src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif'">`;
+    }
+}
+
 
 const funnyMessages = [
     "T'ES NULLE A L'HUILE 😂",
@@ -302,7 +323,7 @@ function renderQuestion() {
         feedback = `
             <div class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">
                 <p>${feedbackText}</p>
-                ${feedbackImg ? `<img src="${feedbackImg}" class="feedback-media" alt="Feedback">` : ''}
+                ${feedbackImg ? renderMediaElement(feedbackImg, 'Feedback', 'feedback-media') : ''}
             </div>
         `;
         
@@ -529,7 +550,7 @@ function renderGifs() {
     const container = document.getElementById('gifs-container');
     if (!container) return;
     container.innerHTML = appData.celebrationGifs.map((gif, i) => {
-        return `<img src="${gif}" alt="Celebration ${i + 1}" onerror="this.src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif'">`;
+        return renderMediaElement(gif, `Celebration ${i + 1}`, '');
     }).join('');
 }
 
