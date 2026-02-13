@@ -34,6 +34,9 @@ let dragStartY = 0;
 let photoStartX = 0;
 let photoStartY = 0;
 
+// ==================== CONSTANTS ====================
+const EXPORT_REMINDER_MESSAGE = '⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.';
+
 const funnyMessages = [
     "T'ES NULLE A L'HUILE 😂",
     "Tu fais exprès ou quoi ?!",
@@ -523,7 +526,7 @@ function renderSpotify() {
         let embedUrl = appData.music.url;
         // Convertir l'URL standard en URL d'intégration si nécessaire
         if (embedUrl.includes('spotify.com') && !embedUrl.includes('/embed')) {
-            // Remove intl-XX/ part if present (e.g., intl-fr/)
+            // Remove intl-{country}/ part if present (e.g., intl-fr/, intl-de/)
             embedUrl = embedUrl.replace(/\/intl-[a-z]{2}\//i, '/');
             // Add /embed/ after spotify.com/
             embedUrl = embedUrl.replace('spotify.com/', 'spotify.com/embed/');
@@ -647,7 +650,7 @@ function updateGeneralSettings() {
     // Update page title
     document.title = `💕 ${appData.title} - ${appData.toName}`;
     
-    alert('✅ Paramètres généraux mis à jour!\n\n⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.');
+    alert(`✅ Paramètres généraux mis à jour!\n\n${EXPORT_REMINDER_MESSAGE}`);
 }
 
 function updateSpotify() {
@@ -740,7 +743,7 @@ function exportData() {
     
     // Show instructions
     setTimeout(() => {
-        alert('✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.');
+        alert(`✅ Fichier data.json téléchargé!\n\n📝 IMPORTANT - Pour sauvegarder vos modifications:\n\n1. Remplacez le fichier data.json dans votre dépôt GitHub\n2. Committez et poussez les changements\n3. Les modifications seront visibles sur votre site après le déploiement\n\nℹ️ Note: Les modifications dans la page web sont temporaires (localStorage). Utilisez toujours "Exporter" puis committez le fichier pour les rendre permanentes.`);
     }, 100);
 }
 
@@ -851,7 +854,7 @@ document.addEventListener('click', (e) => {
             syncTextWithData(target, newText);
             saveData();
             
-            alert('✅ Texte modifié!\n\n⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.');
+            alert(`✅ Texte modifié!\n\n${EXPORT_REMINDER_MESSAGE}`);
         }
     }
 });
