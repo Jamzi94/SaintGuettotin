@@ -176,9 +176,11 @@ function showSection(step) {
         renderQuizResult();
     }
     
-    if (step === 'programs') {
+    if (step === 'celebration') {
         playCelebrationMusic();
-    } else {
+    }
+    
+    if (step === 'final') {
         stopCelebrationMusic();
     }
 }
