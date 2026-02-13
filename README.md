@@ -20,6 +20,16 @@ Un site web interactif et personnalisable pour créer une expérience unique de 
 
 ### Modifier le contenu
 
+**Paramètres Généraux:**
+- Utilisez la section "📝 Paramètres Généraux" en haut du panneau
+- Modifiez :
+  - **Titre principal** : Le titre de votre site
+  - **Sous-titre** : Le sous-titre qui apparaît
+  - **Nom du destinataire** : Le nom de la personne à qui c'est destiné
+  - **Nom de l'expéditeur** : Votre nom
+  - **Score minimum** : Score requis pour réussir le quiz
+- Cliquez sur "Mettre à jour" pour appliquer
+
 **Photos:**
 - Double-cliquez sur une photo pour l'éditer
 - Changez l'URL, ajoutez des effets ou des stickers
@@ -44,6 +54,14 @@ Un site web interactif et personnalisable pour créer une expérience unique de 
   - `https://open.spotify.com/track/...`
   - `https://open.spotify.com/playlist/...`
   - `https://open.spotify.com/intl-fr/track/...` (géré automatiquement)
+
+**GIFs de Célébration:**
+- Ajoutez des URLs de GIFs qui s'afficheront après le "OUI"
+- Utilisez la section "URL GIF célébration"
+
+**Édition de texte (Triple-clic):**
+- Triple-cliquez sur n'importe quel texte pour le modifier rapidement
+- Les modifications de noms se synchronisent automatiquement avec appData
 
 ## 💾 Sauvegarder vos modifications
 
