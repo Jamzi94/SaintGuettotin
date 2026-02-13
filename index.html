@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Euh, c'est pour toi - RoroLasticot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Pour <span id="header-to-name">RoroLasticot</span> (oui toi) 💕</h1>
+            <span class="step-indicator" id="step-indicator"></span>
+        </div>
+    </header>
+    
+    <!-- Edit Mode Indicator -->
+    <div class="edit-indicator hidden" id="edit-indicator">
+        ⚠️ Mode Édition Actif (Triple-clic = activer)
+    </div>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Photos Section -->
+        <section id="photos-section" class="section">
+            <div class="section-title">
+                <h2>Nos Photos (ou pas) 📸</h2>
+                <p>Scroll pour voir... ou pas, t'ES grand(e)</p>
+            </div>
+            <div id="spotify-container" class="spotify-container hidden"></div>
+            <div id="photos-container" class="photos-container"></div>
+            <div class="section-footer">
+                <button class="btn btn-primary" onclick="goToStep('quiz')">
+                    C'est bon, suite ➡️
+                </button>
+            </div>
+        </section>
+        
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="section hidden">
+            <div class="quiz-container">
+                <div class="section-title">
+                    <h2>C'est bien toi RoroLasticot ? 🤨</h2>
+                    <p>Réponds pour prouver que c'est toi (score caché, surprise)</p>
+                    <p class="quiz-progress">Question <span id="score">?</span>/<span id="total-questions">?</span></p>
+                </div>
+                <div id="question-card" class="question-card"></div>
+            </div>
+        </section>
+        
+        <!-- Quiz Result Section -->
+        <section id="quiz-result-section" class="section hidden">
+            <div class="quiz-result-container">
+                <div id="quiz-result-content" class="quiz-result-content">
+                    <!-- Dynamically generated -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Proposal Section -->
+        <section id="proposal-section" class="section hidden">
+            <div class="proposal-container">
+                <h2 id="proposal-to-name">RoroLasticot 💕</h2>
+                <p>T'AS réussi le test, t'ES officiellement toi</p>
+                <p class="proposal-question">Tu veux être ma Valentine ou quoi ?</p>
+                <p class="from-name">De <span id="proposal-from-name">Ton J (le beau gosse)</span> 😎</p>
+                
+                <div class="buttons-container" id="buttons-container">
+                    <button class="btn btn-yes" onclick="handleYes()">OUI ! 💖</button>
+                    <button class="btn btn-no" id="btn-no">Non</button>
+                </div>
+                <p class="funny-message hidden" id="funny-message"></p>
+            </div>
+        </section>
+        
+        <!-- Celebration Section -->
+        <section id="celebration-section" class="section hidden">
+            <div class="celebration-container">
+                <div id="confetti-container"></div>
+                <h2 class="celebration-title">💕 YESSS ! 💕</h2>
+                <p>Bah enfin, t'AS pas trop réfléchi c'est bien</p>
+                <div id="gifs-container" class="gifs-container"></div>
+                <button class="btn btn-primary" onclick="goToStep('programs')">
+                    Voir les programmes (ça claque) ➡️
+                </button>
+            </div>
+        </section>
+        
+        <!-- Programs Section -->
+        <section id="programs-section" class="section hidden">
+            <div class="programs-container">
+                <div class="section-title">
+                    <h2>Choisis ton programme de Saint-Valentin 💝</h2>
+                    <p>Clique sur celui qui te botte (ou pas)</p>
+                </div>
+                <div id="programs-grid" class="programs-grid"></div>
+            </div>
+        </section>
+        
+        <!-- Final Section -->
+        <section id="final-section" class="section hidden">
+            <div class="final-container">
+                <div class="heart-emoji">💕</div>
+                <h2>Bah voilà, <span id="final-to-name">RoroLasticot</span> !</h2>
+                <p>T'as choisi (bon choix ou pas):</p>
+                <div class="selected-program" id="selected-program"></div>
+                <p class="final-message">
+                    Saint-Valentin ensemble, ça va être... quelque chose.<br>
+                    Prépare-toi mentalement.
+                </p>
+                <p class="love-message">
+                    Bref, t'ES coincé(e) avec moi maintenant<br>
+                    <span id="final-from-name">Ton J (le beau gosse)</span> 😎
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Edit Panel -->
+    <div class="edit-panel hidden" id="edit-panel">
+        <h3>⚙️ Mode Édition</h3>
+        <div class="edit-buttons">
+            <button class="edit-btn edit-btn-blue" onclick="addPhoto()">➕ Ajouter une photo</button>
+            <button class="edit-btn edit-btn-green" onclick="addQuestion()">➕ Ajouter une question</button>
+            <button class="edit-btn edit-btn-purple" onclick="addProgram()">➕ Ajouter un programme</button>
+        </div>
+        <div class="edit-inputs">
+            <input type="text" id="photo-url-input" placeholder="URL de la photo">
+            <input type="text" id="gif-url-input" placeholder="URL GIF célébration">
+            <button class="edit-btn edit-btn-pink" onclick="addGif()">Ajouter GIF</button>
+        </div>
+        <div class="edit-inputs">
+            <p style="font-size: 0.8rem; margin-bottom: 0.5rem;">🎵 Musique Spotify</p>
+            <input type="text" id="spotify-url-input" placeholder="URL Playlist/Titre Spotify">
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <input type="checkbox" id="spotify-enabled-input" style="width: auto; margin: 0;">
+                <label for="spotify-enabled-input" style="font-size: 0.8rem;">Activer</label>
+                <button class="edit-btn edit-btn-blue" onclick="updateSpotify()" style="margin-left: auto;">Mettre à jour</button>
+            </div>
+        </div>
+        <button class="export-btn" onclick="exportData()">
+            📥 Exporter pour GitHub Pages
+        </button>
+    </div>
+    
+    <!-- Edit Toggle Button -->
+    <button class="edit-toggle" id="edit-toggle" onclick="toggleEditMode()">
+        ⚙️
+    </button>
+    
+    <!-- Photo Effects Modal -->
+    <div class="modal hidden" id="photo-modal">
+        <div class="modal-content">
+            <h3>Modifier la photo</h3>
+            <div class="modal-section">
+                <p>Effets:</p>
+                <div class="effects-grid" id="effects-grid"></div>
+            </div>
+            <div class="modal-section">
+                <p>Stickers:</p>
+                <div class="stickers-grid" id="stickers-grid"></div>
+            </div>
+            <div class="modal-section">
+                <p>URL de la photo:</p>
+                <input type="text" id="photo-url-edit" placeholder="Nouvelle URL">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="savePhotoChanges()">Sauvegarder</button>
+                <button class="btn btn-danger" onclick="deleteCurrentPhoto()">Supprimer</button>
+                <button class="btn btn-secondary" onclick="closePhotoModal()">Annuler</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Question Edit Modal -->
+    <div class="modal hidden" id="question-modal">
+        <div class="modal-content">
+            <h3>Modifier la question</h3>
+            <input type="text" id="question-text" placeholder="Question">
+            <div id="answers-container"></div>
+            <select id="correct-answer-select"></select>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="saveQuestionChanges()">Sauvegarder</button>
+                <button class="btn btn-danger" onclick="deleteCurrentQuestion()">Supprimer</button>
+                <button class="btn btn-secondary" onclick="closeQuestionModal()">Annuler</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Program Edit Modal -->
+    <div class="modal hidden" id="program-modal">
+        <div class="modal-content">
+            <h3>Modifier le programme</h3>
+            <input type="text" id="program-title" placeholder="Titre">
+            <textarea id="program-description" placeholder="Description"></textarea>
+            <input type="text" id="program-emoji" placeholder="Emoji">
+            <textarea id="program-activities" placeholder="Activités (une par ligne)"></textarea>
+            <div class="modal-buttons">
+                <button class="btn btn-primary" onclick="saveProgramChanges()">Sauvegarder</button>
+                <button class="btn btn-danger" onclick="deleteCurrentProgram()">Supprimer</button>
+                <button class="btn btn-secondary" onclick="closeProgramModal()">Annuler</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

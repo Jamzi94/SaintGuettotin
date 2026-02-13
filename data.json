@@ -1,0 +1,232 @@
+{
+  "title": "Eh oh, c'est pour toi...",
+  "subtitle": "Oui toi, regarde en bas",
+  "fromName": "Ton J (le beau gosse)",
+  "toName": "RoroLasticot",
+  "passingScore": 4,
+  "photos": [
+    {
+      "id": 1,
+      "url": "https://picsum.photos/seed/love1/300/400",
+      "x": 5,
+      "y": 100,
+      "rotation": -5,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 2,
+      "url": "https://picsum.photos/seed/love2/300/300",
+      "x": 35,
+      "y": 50,
+      "rotation": 3,
+      "effect": "none",
+      "sticker": "heart-pink"
+    },
+    {
+      "id": 3,
+      "url": "https://picsum.photos/seed/love3/300/400",
+      "x": 65,
+      "y": 150,
+      "rotation": -2,
+      "effect": "pulse",
+      "sticker": "none"
+    },
+    {
+      "id": 4,
+      "url": "https://picsum.photos/seed/love4/300/300",
+      "x": 15,
+      "y": 350,
+      "rotation": 5,
+      "effect": "none",
+      "sticker": "star"
+    },
+    {
+      "id": 5,
+      "url": "https://picsum.photos/seed/love5/300/400",
+      "x": 50,
+      "y": 400,
+      "rotation": -3,
+      "effect": "float",
+      "sticker": "heart-red"
+    },
+    {
+      "id": 6,
+      "url": "https://picsum.photos/seed/love6/300/300",
+      "x": 80,
+      "y": 320,
+      "rotation": 4,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 7,
+      "url": "https://picsum.photos/seed/love7/300/400",
+      "x": 25,
+      "y": 550,
+      "rotation": -4,
+      "effect": "shine",
+      "sticker": "flower"
+    },
+    {
+      "id": 8,
+      "url": "https://picsum.photos/seed/love8/300/300",
+      "x": 60,
+      "y": 600,
+      "rotation": 2,
+      "effect": "none",
+      "sticker": "none"
+    },
+    {
+      "id": 9,
+      "url": "https://picsum.photos/seed/love9/300/400",
+      "x": 85,
+      "y": 520,
+      "rotation": -1,
+      "effect": "glow",
+      "sticker": "heart-pink"
+    },
+    {
+      "id": 10,
+      "url": "https://picsum.photos/seed/love10/300/300",
+      "x": 45,
+      "y": 750,
+      "rotation": 6,
+      "effect": "none",
+      "sticker": "none"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "question": "A côté de quoi se situe la Bastille ?",
+      "answers": [
+        "D’une prise électrique🔌",
+        "D’un opéra où les gens crient très fort mais avec élégance",
+        "Frr… t’as Google Maps non ?",
+        "Dans le Mordor du sud parisien, là où même les pigeons hésitent 🐦🌫️"
+      ],
+      "correctAnswer": 1,
+      "correctImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
+      "correctSound": "https://www.myinstants.com/media/sounds/correct.mp3",
+      "incorrectImage": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif",
+      "incorrectSound": "https://www.myinstants.com/media/sounds/wrong.mp3"
+    },
+    {
+      "id": 2,
+      "question": "Quand le R prétend lâcher des pets de fouf… en vrai c’est :",
+      "answers": [
+        "Un authentique pet de fouf, classe et assumé",
+        "Un pet timide, discret, introverti et non parfumé 🫥🌼",
+        "Un mélange 50/50",
+        "Sa cuisse qui claque bien vite provoquant un bruit de pet comme tar l'époque ou on faisait la meme avec nos dessous de bras"
+      ],
+      "correctAnswer": 3,
+      "correctImage": "",
+      "correctSound": "",
+      "incorrectImage": "",
+      "incorrectSound": ""
+    },
+    {
+      "id": 3,
+      "question": "Qu’est-ce qui est le mieux chez le R ?",
+      "answers": [
+        "Son mode fontaine à eau illimitée , pour hydrater les foules assoiffées",
+        "Sa bonne humeur radioactive et sa folie contagieuse ☢️😆",
+        "Sa voix entre princesse Disney et PornStar (non, pas le cocktail), son paff surdimensionné et ses trois 🍑🍑🍑 (pour un confort inégalé)",
+        "Le combo improbable : génie incompris + folle du bus"
+      ],
+      "correctAnswer": 2,
+      "correctImage": "",
+      "correctSound": "",
+      "incorrectImage": "",
+      "incorrectSound": ""
+    },
+    {
+      "id": 4,
+      "question": "Si Romane te recommande un chirurgien turc tu :",
+      "answers": [
+        "Actives le mode bip bip et fuis 🏃💨",
+        "Tu fonces direct parce qu’elle a des bons plans plus solides qu’un kebab à 3h du mat (preuve vivante avec ses trois fesses, mamama)",
+        "Tu l’emmènes au grec du coin (plot twist : lui aussi est turc)"
+      ],
+      "correctAnswer": 0,
+      "correctImage": "",
+      "correctSound": "",
+      "incorrectImage": "",
+      "incorrectSound": ""
+    },
+    {
+      "id": 5,
+      "question": "Quelle est la définition de “sussoter” ?",
+      "answers": [
+        "Un cocktail linguistique élégant et subtile entre susurrer, sucer et toussoter servi avec un geste d'illetrisme",
+        "Un mot étrangement stylé né à 4h du matin dans un cerveau en freestyle total dans mec plutot BG…"
+      ],
+      "correctAnswer": 0,
+      "correctImage": "",
+      "correctSound": "",
+      "incorrectImage": "",
+      "incorrectSound": ""
+    },
+    {
+      "id": 6,
+      "question": "Qu’est-ce Romane préfère chez le J ?",
+      "answers": [
+        "BM 😌",
+        "BM air pro max +",
+        "BBM version deluxe maxi best of",
+        "Ses cheveux , son charisme legendaire et son intellignece hors norme (non je dec encore BM)"
+      ],
+      "correctAnswer": 3,
+      "correctImage": "",
+      "correctSound": "",
+      "incorrectImage": "",
+      "incorrectSound": ""
+    }
+  ],
+  "programs": [
+    {
+      "id": 1,
+      "title": "Soirée Swag",
+      "description": "Classique mais efficace, t'as vu le niveau",
+      "activities": [
+        "Restaurant italien (j'paye)",
+        "Promenade romantique (ou pas)",
+        "Verre de vin (ou jus d'orange)"
+      ],
+      "emoji": "🌹"
+    },
+    {
+      "id": 2,
+      "title": "Journée Aventure",
+      "description": "Pour les téméraires qui veulent mourir ensemble",
+      "activities": [
+        "Escape game (on va se planter)",
+        "Déjeuner bizarre",
+        "Activité surprise (spoiler: c'est nul)"
+      ],
+      "emoji": "🎯"
+    },
+    {
+      "id": 3,
+      "title": "Cocooning de Bogoss",
+      "description": "On bouge pas, on reste au lit, parfait",
+      "activities": [
+        "Cuisiner ensemble (tu cuisines)",
+        "Marathon Netflix",
+        "Soirée jeux (je gagne toujours)"
+      ],
+      "emoji": "🏠"
+    }
+  ],
+  "celebrationGifs": [
+    "https://media.giphy.com/media/VIDHHRDgUIcYgAMVcF/giphy.gif",
+    "https://media.giphy.com/media/lp3GUtG2waC88/giphy.gif",
+    "https://media.giphy.com/media/26BRyql7J3iOx875u/giphy.gif"
+  ],
+  "music": {
+    "enabled": true,
+    "url": "https://open.spotify.com/embed/playlist/37i9dQZF1DX4pUKp1pUTsq"
+  }
+}
