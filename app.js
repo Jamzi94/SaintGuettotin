@@ -58,7 +58,7 @@ function renderMediaElement(url, altText, className) {
     const isVideo = /\.mp4(\?|$)/i.test(url);
     
     if (isVideo) {
-        return `<video src="${url}" class="${className}" alt="${altText}" autoplay loop muted playsinline></video>`;
+        return `<video src="${url}" class="${className}" aria-label="${altText}" autoplay loop muted playsinline></video>`;
     } else {
         return `<img src="${url}" class="${className}" alt="${altText}" onerror="this.src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJmZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6ZzR6JmVwPXYxX2ludGVybmFsX2dpZl9ieV9pZCZjdD1n/3o7TKDkDbIDJieKbVm/giphy.gif'">`;
     }
@@ -323,7 +323,7 @@ function renderQuestion() {
         feedback = `
             <div class="answer-feedback ${isCorrect ? 'correct' : 'incorrect'}">
                 <p>${feedbackText}</p>
-                ${renderMediaElement(feedbackImg, 'Feedback', 'feedback-media')}
+                ${feedbackImg ? renderMediaElement(feedbackImg, 'Feedback', 'feedback-media') : ''}
             </div>
         `;
         
