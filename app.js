@@ -617,13 +617,37 @@ function toggleEditMode() {
     document.getElementById('edit-indicator').classList.toggle('hidden', !isEditMode);
     
     if (isEditMode) {
+        // Load Spotify settings
         document.getElementById('spotify-url-input').value = appData.music.url || '';
         document.getElementById('spotify-enabled-input').checked = appData.music.enabled || false;
+        
+        // Load general settings
+        document.getElementById('edit-title').value = appData.title || '';
+        document.getElementById('edit-subtitle').value = appData.subtitle || '';
+        document.getElementById('edit-to-name').value = appData.toName || '';
+        document.getElementById('edit-from-name').value = appData.fromName || '';
+        document.getElementById('edit-passing-score').value = appData.passingScore || 4;
     }
     
     renderPhotos();
     renderPrograms();
     renderQuestion();
+}
+
+function updateGeneralSettings() {
+    appData.title = document.getElementById('edit-title').value;
+    appData.subtitle = document.getElementById('edit-subtitle').value;
+    appData.toName = document.getElementById('edit-to-name').value;
+    appData.fromName = document.getElementById('edit-from-name').value;
+    appData.passingScore = parseInt(document.getElementById('edit-passing-score').value) || 4;
+    
+    saveData();
+    updateNames();
+    
+    // Update page title
+    document.title = `💕 ${appData.title} - ${appData.toName}`;
+    
+    alert('✅ Paramètres généraux mis à jour!\n\n⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.');
 }
 
 function updateSpotify() {
@@ -818,7 +842,7 @@ document.addEventListener('click', (e) => {
         const originalText = target.innerText.trim();
         if (!originalText) return;
 
-        const newText = prompt("Modifier le texte :", originalText);
+        const newText = prompt("✏️ Modifier le texte :", originalText);
         
         if (newText !== null && newText !== originalText) {
             target.innerText = newText;
@@ -826,6 +850,8 @@ document.addEventListener('click', (e) => {
             // Try to sync with appData if it's a known field
             syncTextWithData(target, newText);
             saveData();
+            
+            alert('✅ Texte modifié!\n\n⚠️ N\'oubliez pas d\'exporter le data.json pour sauvegarder de façon permanente.');
         }
     }
 });
@@ -834,10 +860,11 @@ function syncTextWithData(el, text) {
     const id = el.id;
     if (id === 'header-to-name' || id === 'proposal-to-name' || id === 'final-to-name') {
         appData.toName = text;
+        updateNames();
     } else if (id === 'proposal-from-name' || id === 'final-from-name') {
         appData.fromName = text;
-    } else if (el.tagName === 'H2' && el.closest('.section-title')) {
-        // Handle section titles if needed, though they aren't in appData currently
-        // We could add them to appData for persistence
+        updateNames();
     }
+    // Note: Section titles and other texts are modified visually but not saved to appData
+    // Use the "Paramètres Généraux" section in edit mode for persistent changes
 }
